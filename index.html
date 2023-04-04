@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clon Pinterest</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="navbar_pinteres_buttons_container"></div>
+        <div class="navbar_input_search_container">
+            <div class="navbar_input_search">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                <input type="Buscar">
+            </div>
+        </div>
+        <div class="navbar_user_buttons_container"></div>
+    </nav>
+    <main>
+        <!-- Contenedor de pines -->
+        <div class="pin_container">  <!-- Display gred -->
+            <div class="card card_small">
+                <img src="" alt=""> <!-- recortar la imagen y centrar en la previsualizacion (buscar) -->
+
+            </div> <!-- dos clases juntas -->
+            <div class="card card_small"></div>
+            <div class="card card_medium"></div>
+            <div class="card card_large"></div>
+            <div class="card card_small"></div>
+            <div class="card card_medium"></div>
+            <div class="card card_large"></div>
+            <div class="card card_small"></div>
+            <div class="card card_medium"></div>
+            <div class="card card_large"></div>
+            <div class="card card_small"></div>
+            <div class="card card_medium"></div>
+            <div class="card card_large"></div>
+            <div class="card card_small"></div>
+            <div class="card card_medium"></div>
+            <div class="card card_large"></div>
+            <div class="card card_small"></div>
+            <div class="card card_medium"></div>
+            <div class="card card_large"></div>
+            <div class="card card_small"></div>
+            <div class="card card_medium"></div>
+            <div class="card card_large"></div>
+            <div class="card card_small"></div>
+            <div class="card card_medium"></div>
+            <div class="card card_large"></div>
+            <div class="card card_small"></div>
+            <div class="card card_medium"></div>
+            <div class="card card_large"></div>
+            <div class="card card_small"></div>
+            <div class="card card_medium"></div>
+            <div class="card card_large"></div>
+        </div>
+        <!-- Fin de contenedor de pines -->
+        <!-- Botón flotante -->
+        <div class="container-fluid d-flex position-absolute bottom-0 end-0">
+            <a title="Agregar" class="btn btn-primary btn-lg rounded-circle ms-auto me-5 mb-5"
+                ng-click="disposeRequest()" data-bs-toggle="modal" data-bs-target="#newRequest">
+                <i class="fa-solid fa-plus"></i>
+            </a>
+        </div>
+        <!-- Fin botón flotante -->
+    </main>
+</body>
+
+</html>
+
+<!--<div class="navbar_pinteres_buttons_container">
+            <div class="navbar_pinteres_buttons">
+                <button class="btn_inicio">Inicio</button>
+                <button class="btn_hoy">Hoy</button>
+
+                <select name="dropdown_crear" id="dropdown_crear">
+                <option value="volvo">Crear un Idea Pin</option>
+                <option value="saab">Crear Pin</option>
+                </select>
+            </div>
+        </div>-->

@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px; /* ~1rem*/
+}
+
+/*variables */
+:root {
+    --card_width: 15.625rem;
+    /*~250px Anchura de la tarjeta/pin */
+    --row_increment: 0.625rem;
+    /*~10px Al estar usando CSS grid, cada tarjeta/pin estará hecha con incrementos de 10px para las filas */
+    --card_border_radius: 1rem;
+    /*~16px  Redondeo en los bordes de las tarjetas/pines*/
+    --card_small: 26;
+    /* Factor de crecimiento para tarjetas pequeñas: 26*0.625rem */
+    --card_medium: 33;
+    /* Factor de crecimiento para tarjetas medianas: 26*0.625rem */
+    --card_large: 45;
+    /* Factor de crecimiento para tarjetas grandes: 26*0.625rem */
+}
+
+main {
+    height: 100vh;   /*100% de visualizacion, mas no toda la pantalla*/
+    width: 100%;    /* 100% de ancho de toda la pantalla*/
+    background-color: blanchedalmond;
+}
+
+nav{    /* clase de la barra de navegacion*/
+    height: 5rem;
+    background-color: green;
+    display: flex;
+}
+
+.navbar_pinteres_buttons_container{
+    width: 16rem;
+    height: 100%;
+    background-color: aquamarine;
+}
+
+.navbar_input_search_container{
+    flex-grow: 4;
+    min-width: 3rem;
+    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.navbar_user_buttons_container{
+    width: 13rem;
+    background-color: blue;
+}
+
+.navbar_input_search{
+    padding-inline-start: 0.6rem;
+    height: 3rem;
+    width: 100%;
+    background-color: gray;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.navbar_input_search>svg{
+    height: 1rem;
+}
+
+.navbar_input_search>input{
+    height: 1rem;
+    flex-grow: 3;
+}
+
+.pin_container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--card_width));
+    grid-auto-rows: var(--row_increment);
+    justify-content: center;
+
+    background-color: black;
+}
+
+.card {
+    padding: 0;
+    margin: 15px 10px;
+    border-radius: var(--card_border_radius);
+    background-color: red;
+}
+
+.card_small {
+    grid-row-end: span var(--card_small);
+}
+
+.card_medium {
+    grid-row-end: span var(--card_medium);
+}
+
+.card_large {
+    grid-row-end: span var(--card_large);
+}
