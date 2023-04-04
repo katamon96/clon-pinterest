@@ -10,29 +10,57 @@
 </head>
 
 <body>
-    <nav>
-        <div class="navbar_pinteres_buttons_container"></div>
+    <nav id="navbar-pinterest">
+        <a href="https://www.pinterest.com.mx/"><img src="./icons/pinterest-svgrepo-com.svg" alt="Logo Pinterest"></a>
+        <div class="navbar_pinteres_buttons_container">
+            <div class="navbar_pinterest_buttons">
+                <button class="btn_inicio">Inicio</button>
+                <button class="btn_hoy">Hoy</button>
+                <select name="btn_option">
+                    <option value="" hidden selected>Crear</option>
+                    <option value="idea">Crear una Idea Pin</option>
+                    <option value="pin">Crear Pin</option>
+                </select>
+            </div>
+        </div>
         <div class="navbar_input_search_container">
             <div class="navbar_input_search">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
-                <input type="Buscar">
+                <input class="finder" type="search" placeholder="Buscar">
             </div>
         </div>
-        <div class="navbar_user_buttons_container"></div>
+        <div class="navbar_user_buttons_container">
+            <div class="navbar_pinterest_buttons">
+                <button class="btn_notificaciones">Notifiaciones</button>
+                <button class="btn_mensajes">Mensajes</button>
+                <select name="dropdown_crear" id="dropdown_crear">
+                    <option value="user">Usuario</option>
+                    <option value="saab">Crear Pin</option>
+                </select>
+            </div>
+        </div>
     </nav>
-    <main>
+    <main id="content">
         <!-- Contenedor de pines -->
         <div class="pin_container">  <!-- Display gred -->
             <div class="card card_small">
-                <img src="" alt=""> <!-- recortar la imagen y centrar en la previsualizacion (buscar) -->
-
+                <img src="./imgs/eva_01.png" alt="Unidad Eva modelo 01"> <!-- recortar la imagen y centrar en la previsualizacion (buscar) -->
             </div> <!-- dos clases juntas -->
-            <div class="card card_small"></div>
-            <div class="card card_medium"></div>
-            <div class="card card_large"></div>
-            <div class="card card_small"></div>
-            <div class="card card_medium"></div>
-            <div class="card card_large"></div>
+            <div class="card card_medium">
+                <img src="./imgs/eva_01.png" alt="Unidad Eva modelo 01">
+            </div>
+            <div class="card card_large">
+                <img src="./imgs/eva_01.png" alt="Unidad Eva modelo 01">
+            </div>
+            <div class="card card_small">
+                <img src="./imgs/eva_02.png" alt="Unidad Eva modelo 02">
+            </div>
+            <div class="card card_medium">
+                <img src="./imgs/eva_02.png" alt="Unidad Eva modelo 02">
+            </div>
+            <div class="card card_large">
+                <img src="./imgs/eva_02.png" alt="Unidad Eva modelo 02">
+            </div>
             <div class="card card_small"></div>
             <div class="card card_medium"></div>
             <div class="card card_large"></div>
@@ -71,15 +99,3 @@
 </body>
 
 </html>
-
-<!--<div class="navbar_pinteres_buttons_container">
-            <div class="navbar_pinteres_buttons">
-                <button class="btn_inicio">Inicio</button>
-                <button class="btn_hoy">Hoy</button>
-
-                <select name="dropdown_crear" id="dropdown_crear">
-                <option value="volvo">Crear un Idea Pin</option>
-                <option value="saab">Crear Pin</option>
-                </select>
-            </div>
-        </div>-->

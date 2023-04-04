@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px; /* ~1rem*/
 }
 
@@ -21,16 +22,21 @@
     /* Factor de crecimiento para tarjetas grandes: 26*0.625rem */
 }
 
-main {
+#content{
     height: 100vh;   /*100% de visualizacion, mas no toda la pantalla*/
     width: 100%;    /* 100% de ancho de toda la pantalla*/
     background-color: blanchedalmond;
 }
 
-nav{    /* clase de la barra de navegacion*/
+#navbar-pinterest{    /* clase de la barra de navegacion*/
     height: 5rem;
     background-color: green;
     display: flex;
+    justify-content: space-between;
+}
+
+#navbar-pinterest>a>img{
+    height: 3.5rem;
 }
 
 .navbar_pinteres_buttons_container{
@@ -39,6 +45,37 @@ nav{    /* clase de la barra de navegacion*/
     background-color: aquamarine;
 }
 
+.btn_inicio {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn_hoy {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    float: left;
+}
+
+.btn_option {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    float: left;
+}
 .navbar_input_search_container{
     flex-grow: 4;
     min-width: 3rem;
@@ -73,21 +110,43 @@ nav{    /* clase de la barra de navegacion*/
     flex-grow: 3;
 }
 
+/* inicia el contenedor*/
+
 .pin_container {
+    display: grid;
     margin: 0;
     padding: 0;
     width: 100%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-
-    display: grid;
     grid-template-columns: repeat(auto-fill, var(--card_width));
     grid-auto-rows: var(--row_increment);
     justify-content: center;
-
     background-color: black;
+    float: left;
 }
+
+.card_small>img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    border-radius: 1.5rem;
+  }
+  
+  .card_medium>img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    border-radius: 1.5rem;
+  }
+
+  .card_large>img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    border-radius: 1.5rem;
+  }
 
 .card {
     padding: 0;
