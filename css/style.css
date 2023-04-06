@@ -55,14 +55,65 @@
 }
 
 .navbar_pinterest_buttons{
-    padding-inline-start: 1rem;
+    padding-inline-start: 0.8rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    background-color: black;
 }
 
+.btn_home{
+    height: 100%;
+    width: 30%;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 0;
+    font-weight: bold;
+}
+
+.btn_home:active{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.btn_hoy{
+    height: 100%;
+    width: 30%;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 0;
+    font-weight: bold;
+}
+
+.btn_hoy:active{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+#btn_options{
+    border: 0;
+    height: 100%;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+#btn_options:active{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+  
 .navbar_input_search_container{
     height: 100%;
     flex-grow: 4;
@@ -84,9 +135,17 @@
     align-content: center;
 }
 
+.finder{
+    padding-inline-start: 0.6rem;
+    border: 0;
+    background-color: #e9e9e9;
+    border-radius: 1.2rem;
+}
+
 .navbar_input_search>svg{
     height: 1.5rem;
     align-content: center;
+    fill: #5f5f5f;
 }
 
 .navbar_input_search>input{
@@ -97,19 +156,59 @@
 
 .navbar_user_buttons_container{
     width: 13rem;
-    background-color: blue;
 }
+
 .navbar_user_buttons{
-    padding-inline-start: 1.4rem;
     height: 100%;
-    background-color: #e9e9e9;
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    justify-content: space-evenly;
 }
 
-.navbar_user_buttons>svg{
-    height: 1.7rem;
+#notifications{
+    margin-top: 0.2rem;
+    width: 13%;
+    border-radius: var(--card_border_radius);
+    cursor: pointer;
+    background-color: white;
+    fill: #5f5f5f;
+}
+
+
+#message{
+    margin-top: 0.2rem;
+    width: 13%;
+    border-radius: var(--card_border_radius);
+    cursor: pointer;
+    background-color: white;
+    fill: #5f5f5f;
+}
+
+#profile-img{
+    margin-top: 0.2rem;
+    width: 13%;
+    border-radius: var(--card_border_radius);
+    cursor: pointer;
+    background-color: white;
+    fill: #5f5f5f;
+}
+
+#notifications:hover{
+    background-color: #e9e9e9;
+}
+
+#message:hover{
+    background-color: #e9e9e9;
+}
+
+#profile-img:hover{
+    background-color: #e9e9e9;
+}
+
+#btn_user_option{
+    border: 0;
 }
 
 /* inicia el contenedor*/
@@ -134,7 +233,7 @@
     padding: 0;
     margin: 15px 10px;
     border-radius: var(--card_border_radius);
-    background-color: red;
+
 }
 
 .card_content{
@@ -143,25 +242,11 @@
     padding-top: 0.1rem;
     position: absolute;
     text-align: center;
-    background-color: crimson;
+    
     border-radius: var(--card_border_radius);
 }
 
 .card_content>img{
-    object-fit: cover;
-    width:100%;
-    height:100%;
-    border-radius: 1rem;
-  }
-
-  .card_small>img{
-    object-fit: cover;
-    width:100%;
-    height:100%;
-    border-radius: 1rem;
-  }
-
-  .card_large>img{
     object-fit: cover;
     width:100%;
     height:100%;
@@ -186,6 +271,40 @@
     border-radius: var(--card_border_radius);
 }
 
+.btn_save{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 2rem;
+    height: 3rem;
+    width: 6rem;
+    border: 0;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 6rem;
+}
+
+.btn_save:active{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.upload{
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    margin-top: 5rem;
+    border-radius: var(--card_border_radius);
+}
+
+.menu{
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    margin-top: 5rem;
+    border-radius: var(--card_border_radius);
+}
 .card_buttons_on_hover:hover{
     opacity: 1;
 }
@@ -200,4 +319,12 @@
 
 .card_large {
     grid-row-end: span var(--card_large);
+}
+
+.container-fluid d-flex position-absolute bottom-0 end-0{
+    width:90px;
+    height:240px;
+    position:absolute;
+    right:0px;
+    bottom:0px;
 }
