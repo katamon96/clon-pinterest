@@ -226,7 +226,6 @@
     grid-template-columns: repeat(auto-fill, var(--card_width));
     grid-auto-rows: var(--row_increment);
     justify-content: center;
-    background-color: ffffffff;
     float: left;
 }
 
@@ -235,7 +234,6 @@
     padding: 0;
     margin: 15px 10px;
     border-radius: var(--card_border_radius);
-
 }
 
 .card-image{
@@ -244,7 +242,6 @@
     padding-top: 0.1rem;
     position: absolute;
     text-align: center;
-    
     border-radius: var(--card_border_radius);
 }
 
@@ -285,14 +282,12 @@
     text-align: center;
     cursor: pointer;
     margin-right: 1rem;
-    
 }
 
 .btn_save_hover:hover{
     background-color: #a3081a;
     color: white;
     font-weight: bold;
-    
 }
 
 .btn_footer_hover{
